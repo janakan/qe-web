@@ -22,7 +22,7 @@ const routes = [
     name: 'superconnectors',
     component: () => import('../views/SuperconnectorsPage.vue'),
   },
-  // Lifestyle
+  // Growth
   {
     path: '/coaching',
     name: 'coaching',
@@ -33,6 +33,12 @@ const routes = [
     name: 'learning',
     component: () => import('../views/LearningPage.vue'),
   },
+  {
+    path: '/peer-groups',
+    name: 'peer-groups',
+    component: () => import('../views/PeerGroupsPage.vue'),
+  },
+  // Life
   {
     path: '/travel',
     name: 'travel',
@@ -48,7 +54,7 @@ const routes = [
     name: 'retreats',
     component: () => import('../views/RetreatsPage.vue'),
   },
-  // Apps
+  // Media
   {
     path: '/apps/books',
     name: 'books',
@@ -74,6 +80,11 @@ const routes = [
     path: '/worldview',
     name: 'worldview',
     component: () => import('../views/WorldviewPage.vue'),
+  },
+  {
+    path: '/plus',
+    name: 'plus',
+    component: () => import('../views/PlusPage.vue'),
   },
   {
     path: '/blog',

@@ -71,7 +71,7 @@ const milestones = [
             </div>
             <div class="tension-stat">
               <span class="tension-stat-value">94%</span>
-              <span class="tension-stat-label">Say Q made their life better</span>
+              <span class="tension-stat-label">Say Quintessential changed their life</span>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ const milestones = [
       title="Help us make the extraordinary"
       title-accent="accessible."
       description="Whether as a member, as a team member, or simply as a fellow human who believes the world can be better — there's a place for you here."
-      primary-text="Join Q"
+      primary-text="Join Quintessential"
       primary-link="/contact"
       secondary-text="See Careers"
       secondary-link="/careers"

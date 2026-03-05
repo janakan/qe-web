@@ -130,8 +130,8 @@ const testimonials = [
           <span class="text-serif-italic text-gold">mean it.</span>
         </h1>
         <p class="hero-subtitle text-body-lg reveal reveal-delay-2">
-          AI-curated learning journeys that adapt to you — your pace, your style, 
-          your goals. Not courses. <em>Transformations.</em>
+          World-class learning journeys that adapt to you — your pace, your style, 
+          your goals. Not courses. <em>Transformations.</em> Free. For everyone. Forever.
         </p>
         <div class="hero-actions reveal reveal-delay-3">
           <router-link to="/contact" class="btn btn-primary btn-lg">Start Learning</router-link>
@@ -145,8 +145,9 @@ const testimonials = [
       <div class="container">
         <div class="philosophy-inner">
           <p class="text-subheading" style="max-width: 800px; margin: 0 auto; text-align: center;">
-            Most online learning is content you consume and forget. Ours is a 
-            <span class="text-gold">journey you live</span> — personalized by AI, 
+            The best learning used to be reserved for those who could afford elite universities and executive programs.
+            AI changes that. Our learning journeys are 
+            <span class="text-gold">free for every human on earth</span> — personalized by AI, 
             reinforced through practice, and deepened by community. 
             Knowledge that sticks because it matters to <em>you</em>.
           </p>

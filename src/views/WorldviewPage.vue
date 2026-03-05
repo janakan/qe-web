@@ -101,7 +101,7 @@ const beliefs = [
             and how deeply you <span class="text-serif-italic text-gold">connected</span>."
           </p>
           <p class="text-body" style="text-align: center; margin-top: var(--space-xl); color: var(--color-text-tertiary);">
-            — The Q Team
+            — The Quintessential Team
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ const values = [
   <div class="team-page">
     <section class="hero">
       <div class="hero-bg">
-        <img src="/images/team-hero.png" alt="The Q team collaborating" class="hero-img" />
+        <img src="/images/team-hero.png" alt="The Quintessential team collaborating" class="hero-img" />
         <div class="hero-overlay"></div>
       </div>
       <div class="container hero-content">

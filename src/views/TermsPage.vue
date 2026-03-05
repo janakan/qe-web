@@ -26,7 +26,7 @@
           <p>Some features require a paid subscription. Subscription fees are billed in advance on a monthly or annual basis. You may cancel at any time, and your subscription will remain active until the end of the current billing period. Refunds are handled on a case-by-case basis at our discretion.</p>
 
           <h2>6. Community Guidelines</h2>
-          <p>As a member of Q communities, you agree to treat others with respect, maintain confidentiality (Chatham House Rule applies to all events), refrain from solicitation or pitching, and contribute genuinely to discussions. Violation of community guidelines may result in account suspension or termination.</p>
+          <p>As a member of Quintessential communities, you agree to treat others with respect, maintain confidentiality (Chatham House Rule applies to all events), refrain from solicitation or pitching, and contribute genuinely to discussions. Violation of community guidelines may result in account suspension or termination.</p>
 
           <h2>7. AI-Generated Content</h2>
           <p>Our services use artificial intelligence to generate content including but not limited to coaching responses, music, news summaries, and recommendations. While we strive for accuracy and helpfulness, AI-generated content should not be treated as professional advice (medical, legal, financial, or therapeutic). You acknowledge that AI outputs may contain errors.</p>

@@ -13,7 +13,7 @@ const experiences = [
   {
     icon: Wine,
     title: 'Private Dining Events',
-    description: 'Intimate chef-curated dinners for Q members. Seasonal menus, sommelier pairings, and conversations that flow as freely as the wine.',
+    description: 'Intimate chef-curated dinners for Quintessential members. Seasonal menus, sommelier pairings, and conversations that flow as freely as the wine.',
   },
   {
     icon: ChefHat,
@@ -70,7 +70,7 @@ const testimonials = [
     role: 'London, UK',
   },
   {
-    quote: 'The Q dinner in Paris was the highlight of my year. Eight strangers, a private room, a chef who cooked just for us, and a conversation about AI ethics that lasted until 1am.',
+    quote: 'The Quintessential dinner in Paris was the highlight of my year. Eight strangers, a private room, a chef who cooked just for us, and a conversation about AI ethics that lasted until 1am.',
     name: 'Camille Dubois',
     role: 'Founder, Lumière Studios',
   },

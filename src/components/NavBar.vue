@@ -13,25 +13,31 @@ const navGroups = [
   {
     label: 'Community',
     items: [
-      { name: 'Circles', route: '/circles', desc: 'AI-powered communities that connect the right people' },
+      { name: 'Circles', route: '/circles', desc: 'AI-powered networks that connect the right people' },
       { name: 'Events', route: '/events', desc: 'Reciprocity rings, dinner parties, and serendipitous gatherings' },
       { name: 'Superconnectors', route: '/superconnectors', desc: 'The AI agents that make extraordinary connections' },
     ],
   },
   {
-    label: 'Lifestyle',
+    label: 'Growth',
     items: [
-      { name: 'Coaching', route: '/coaching', desc: 'AI + human coaching for every dimension of life' },
-      { name: 'Learning', route: '/learning', desc: 'Personalized learning journeys powered by AI' },
-      { name: 'Travel', route: '/travel', desc: 'Curated travel experiences you\'ll never forget' },
+      { name: 'Coaching', route: '/coaching', desc: 'World-class coaching, free for everyone' },
+      { name: 'Learning', route: '/learning', desc: 'World-class learning journeys, free for everyone' },
+      { name: 'Peer Groups', route: '/peer-groups', desc: 'Weekly growth groups for self-discovery and accountability' },
+    ],
+  },
+  {
+    label: 'Life',
+    items: [
+      { name: 'Travel', route: '/travel', desc: 'AI-curated travel experiences you\'ll never forget' },
       { name: 'Dining', route: '/dining', desc: 'Exceptional dining, from hidden gems to private chefs' },
       { name: 'Retreats', route: '/retreats', desc: 'Immersive experiences for deep renewal' },
     ],
   },
   {
-    label: 'Apps',
+    label: 'Media',
     items: [
-      { name: 'Books', route: '/apps/books', desc: 'Powerful summaries and personalized reading journeys' },
+      { name: 'Books', route: '/apps/books', desc: 'Powerful summaries and reading journeys, free for everyone' },
       { name: 'News', route: '/apps/news', desc: 'News that matters to you, without the noise' },
       { name: 'Music', route: '/apps/music', desc: 'AI-composed music tailored to your mood and moment' },
     ],
@@ -41,6 +47,8 @@ const navGroups = [
     items: [
       { name: 'Mission', route: '/mission', desc: 'Why we exist and what we\'re building' },
       { name: 'Worldview', route: '/worldview', desc: 'What we believe about AI, humanity, and flourishing' },
+      { name: 'Q+', route: '/plus', desc: 'Support the movement and unlock premium experiences' },
+      { name: 'World AI Forum', route: 'https://worldaiforum.org', desc: 'Our sister org focused on responsible AI governance', external: true },
       { name: 'Blog', route: '/blog', desc: 'Ideas, stories, and updates from the movement' },
     ],
   },
@@ -118,16 +126,28 @@ onUnmounted(() => {
               @mouseleave="closeDropdown"
             >
               <div class="dropdown-inner">
-                <router-link
-                  v-for="item in group.items"
-                  :key="item.route"
-                  :to="item.route"
-                  class="dropdown-item"
-                  @click="activeDropdown = null"
-                >
-                  <span class="dropdown-item-name">{{ item.name }}</span>
-                  <span class="dropdown-item-desc">{{ item.desc }}</span>
-                </router-link>
+                <template v-for="item in group.items" :key="item.route">
+                  <a
+                    v-if="item.external"
+                    :href="item.route"
+                    class="dropdown-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    @click="activeDropdown = null"
+                  >
+                    <span class="dropdown-item-name">{{ item.name }} ↗</span>
+                    <span class="dropdown-item-desc">{{ item.desc }}</span>
+                  </a>
+                  <router-link
+                    v-else
+                    :to="item.route"
+                    class="dropdown-item"
+                    @click="activeDropdown = null"
+                  >
+                    <span class="dropdown-item-name">{{ item.name }}</span>
+                    <span class="dropdown-item-desc">{{ item.desc }}</span>
+                  </router-link>
+                </template>
               </div>
             </div>
           </transition>

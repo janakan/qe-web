@@ -74,9 +74,9 @@ const howItWorks = [
 
 const stats = [
   { value: '120+', label: 'Active Circles' },
-  { value: '32', label: 'Countries' },
-  { value: '94%', label: 'Made a New Friend' },
-  { value: '12,000+', label: 'Members' },
+  { value: '32', label: 'Countries Reached' },
+  { value: '94%', label: 'Made a Meaningful Connection' },
+  { value: '12,000+', label: 'Lives Connected' },
 ]
 
 const testimonials = [
@@ -110,8 +110,9 @@ const testimonials = [
           <span class="text-serif-italic text-gold">people.</span>
         </h1>
         <p class="hero-subtitle text-body-lg reveal reveal-delay-2">
-          AI-powered communities that bring the right people together at the right time.
-          Intimate, curated, and built for real relationships — not superficial networking.
+          For centuries, the best opportunities came through networks — old-boy clubs, school
+          ties, boardroom whispers. Circles break that open. AI-powered communities that connect
+          the right people, regardless of background or postcode.
         </p>
         <div class="hero-actions reveal reveal-delay-3">
           <router-link to="/contact" class="btn btn-primary btn-lg">Join a Circle</router-link>

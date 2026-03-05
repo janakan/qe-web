@@ -47,7 +47,7 @@ const houseRules = [
   {
     icon: Handshake,
     title: 'Chatham House Rule',
-    description: 'What\'s shared in a Q event stays in the room. You may share insights, never identities.',
+    description: 'What\'s shared in a Quintessential event stays in the room. You may share insights, never identities.',
   },
   {
     icon: Target,
@@ -258,7 +258,7 @@ const typeTagColors = {
           <h2 class="text-heading">House<br><span class="text-serif-italic text-gold">rules.</span></h2>
           <p class="text-body-lg" style="max-width: 600px; margin: var(--space-lg) auto 0;">
             These aren't policies — they're the culture we build together. 
-            They're what makes Q events feel like nowhere else.
+            They're what makes Quintessential events feel like nowhere else.
           </p>
         </div>
         <div class="rules-grid">
@@ -281,7 +281,7 @@ const typeTagColors = {
       label="Join an Event"
       title="Ready for a conversation"
       title-accent="that matters?"
-      description="Whether online or in person, intimate or grand — every Q event is designed for the kind of human connection that changes trajectories."
+      description="Whether online or in person, intimate or grand — every Quintessential event is designed for the kind of human connection that changes trajectories."
       primary-text="Attend an Event"
       primary-link="/contact"
       secondary-text="Explore Circles"

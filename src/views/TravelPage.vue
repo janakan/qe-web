@@ -68,7 +68,7 @@ const features = [
   {
     icon: Handshake,
     title: 'Travel with Your Circle',
-    description: 'Coordinate group trips with your Q Circle. The AI handles scheduling, preferences, and compromise so everyone has an extraordinary time.',
+    description: 'Coordinate group trips with your Quintessential Circle. The AI handles scheduling, preferences, and compromise so everyone has an extraordinary time.',
   },
 ]
 

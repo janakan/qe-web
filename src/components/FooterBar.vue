@@ -1,16 +1,19 @@
 <script setup>
+import { Fingerprint } from 'lucide-vue-next'
 const currentYear = new Date().getFullYear()
 
 const footerLinks = {
-  company: [
+  movement: [
     { name: 'Mission', route: '/mission' },
     { name: 'Worldview', route: '/worldview' },
-    { name: 'Team', route: '/team' },
-    { name: 'Contact', route: '/contact' },
+    { name: 'Q+', route: '/plus' },
+    { name: 'World AI Forum', url: 'https://worldaiforum.org', external: true },
   ],
-  resources: [
-    { name: 'Blog', route: '/blog' },
+  company: [
+    { name: 'Team', route: '/team' },
     { name: 'Careers', route: '/careers' },
+    { name: 'Blog', route: '/blog' },
+    { name: 'Contact', route: '/contact' },
   ],
   legal: [
     { name: 'Terms of Service', route: '/terms' },
@@ -34,11 +37,11 @@ const socialLinks = [
         <!-- Brand column -->
         <div class="footer-brand">
           <router-link to="/" class="footer-logo">
-            <span class="footer-logo-mark">Q</span>
+            <span class="footer-logo-mark"><Fingerprint :size="18" :stroke-width="2.5" /></span>
             <span class="footer-logo-text">Quintessential</span>
           </router-link>
           <p class="footer-tagline">
-            Helping humans flourish<br>in the age of AI.
+            Every human deserves to flourish.<br>We're building the tools to make it happen.
           </p>
           <div class="footer-social">
             <a
@@ -72,21 +75,31 @@ const socialLinks = [
 
         <!-- Link columns -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Company</h4>
-          <router-link
-            v-for="link in footerLinks.company"
-            :key="link.route"
-            :to="link.route"
-            class="footer-link"
-          >
-            {{ link.name }}
-          </router-link>
+          <h4 class="footer-col-title">The Movement</h4>
+          <template v-for="link in footerLinks.movement" :key="link.name">
+            <a
+              v-if="link.external"
+              :href="link.url"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ link.name }} ↗
+            </a>
+            <router-link
+              v-else
+              :to="link.route"
+              class="footer-link"
+            >
+              {{ link.name }}
+            </router-link>
+          </template>
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-col-title">Resources</h4>
+          <h4 class="footer-col-title">Company</h4>
           <router-link
-            v-for="link in footerLinks.resources"
+            v-for="link in footerLinks.company"
             :key="link.route"
             :to="link.route"
             class="footer-link"
@@ -146,11 +159,8 @@ const socialLinks = [
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: var(--color-gold);
-  color: var(--color-text-inverse);
-  font-family: var(--font-serif);
-  font-weight: var(--font-bold);
-  font-size: var(--text-lg);
+  background: transparent;
+  color: #fff;
   border-radius: 6px;
 }
 

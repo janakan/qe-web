@@ -44,7 +44,7 @@ const tiers = [
     badgeClass: 'badge-free',
     price: '£0',
     period: 'forever',
-    description: 'World-class coaching powered entirely by AI. Available 24/7, deeply personalized, and genuinely transformative.',
+    description: 'Everyone deserves a great coach. AI makes this possible for the first time in history. Free. For everyone. Forever.',
     features: [
       'Unlimited AI coaching sessions',
       'Personalized goal tracking',

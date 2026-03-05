@@ -5,18 +5,18 @@ useScrollReveal()
 
 const roles = [
   { title: 'Senior AI Engineer', team: 'Engineering', location: 'London / Remote', type: 'Full-time', description: 'Build the AI systems that power Quintessential Coaching, Superconnectors, and personalization. Work on NLP, recommendation systems, and dialogue.' },
-  { title: 'Product Designer', team: 'Design', location: 'London', type: 'Full-time', description: 'Shape the experience of Q\'s web and mobile products. Create interfaces that feel invisible — warm, intuitive, and deeply human.' },
+  { title: 'Product Designer', team: 'Design', location: 'London', type: 'Full-time', description: 'Shape the experience of Quintessential\'s web and mobile products. Create interfaces that feel invisible — warm, intuitive, and deeply human.' },
   { title: 'Community Lead', team: 'Community', location: 'London / Singapore', type: 'Full-time', description: 'Build and nurture Quintessential Circles worldwide. Design events, facilitate connections, and help members find their people.' },
-  { title: 'Full Stack Developer', team: 'Engineering', location: 'Remote', type: 'Full-time', description: 'Build features across the Q platform using Vue, Node, and PostgreSQL. Ship fast, care deeply, and build for humans.' },
+  { title: 'Full Stack Developer', team: 'Engineering', location: 'Remote', type: 'Full-time', description: 'Build features across the Quintessential platform using Vue, Node, and PostgreSQL. Ship fast, care deeply, and build for humans.' },
   { title: 'Content & Editorial Lead', team: 'Content', location: 'Remote', type: 'Full-time', description: 'Lead the editorial voice of Quintessential Books and Quintessential News. Write, curate, and ensure every word reflects our values of depth and honesty.' },
-  { title: 'Head of Partnerships', team: 'Business', location: 'London', type: 'Full-time', description: 'Build strategic partnerships with coaches, restaurants, retreat venues, and travel providers. Make Q\'s real-world experiences extraordinary.' },
+  { title: 'Head of Partnerships', team: 'Business', location: 'London', type: 'Full-time', description: 'Build strategic partnerships with coaches, restaurants, retreat venues, and travel providers. Make Quintessential\'s real-world experiences extraordinary.' },
 ]
 
 const perks = [
   'Competitive salary + meaningful equity',
   'Remote-first with London HQ',
   'Unlimited learning budget',
-  'Annual Q Retreat for all team members',
+  'Annual Quintessential Retreat for all team members',
   '30 days holiday + your birthday',
   'Free Q+ membership (of course)',
   'Enhanced parental leave',
