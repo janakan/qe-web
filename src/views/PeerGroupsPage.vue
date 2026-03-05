@@ -142,7 +142,7 @@ const testimonials = [
         </h1>
         <p class="hero-subtitle text-body-lg reveal reveal-delay-2">
           For centuries, the most transformative growth happened in elite networks —
-          old-boy clubs, exclusive cohorts, boardroom confidants. Quintessential Peer Groups
+          old-boy clubs, closed cohorts, boardroom confidants. Quintessential Peer Groups
           bring that power to every human. <strong>Free.</strong>
         </p>
         <div class="hero-actions reveal reveal-delay-3">
@@ -300,7 +300,7 @@ const testimonials = [
                 <span class="tier-amount">$9</span>
                 <span class="tier-period">/month</span>
               </div>
-              <p class="tier-desc">Support the mission and unlock premium content, exclusive workshops, and deeper growth tools.</p>
+              <p class="tier-desc">Go deeper with premium content, curated workshops, and advanced growth tools — and help keep Peer Groups free for everyone.</p>
             </div>
             <ul class="tier-features">
               <li>Everything in Free</li>
@@ -308,7 +308,7 @@ const testimonials = [
               <li>Advanced growth assessments</li>
               <li>Create your own Peer Group</li>
               <li>Priority AI matching</li>
-              <li>Exclusive retreat invitations</li>
+              <li>Curated retreat invitations</li>
             </ul>
             <router-link to="/plus" class="btn btn-primary" style="width: 100%; margin-top: auto;">Join Q+</router-link>
           </div>

@@ -231,6 +231,19 @@ const testimonials = [
       </div>
     </section>
 
+    <!-- MISSION MOMENT -->
+    <section class="mission-moment section section-border-top reveal">
+      <div class="container">
+        <div class="mission-inner" style="padding: var(--space-3xl); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg-secondary);">
+          <p class="text-body-lg" style="max-width: 700px; margin: 0 auto; text-align: center; color: var(--color-text-secondary);">
+            Every Q+ travel itinerary helps fund
+            <span class="text-gold">free coaching and community access</span>
+            for thousands of people worldwide. Travel well, and do good.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <CtaBanner
       label="Start Planning"

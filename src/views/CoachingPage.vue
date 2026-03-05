@@ -69,7 +69,7 @@ const tiers = [
       'Coach-AI handoff notes',
       'Priority AI availability',
       'Advanced personality insights',
-      'Exclusive coaching workshops',
+      'Curated coaching workshops',
     ],
     cta: 'Join Q+',
     ctaClass: 'btn-primary',
@@ -77,7 +77,7 @@ const tiers = [
   },
   {
     name: 'Premium',
-    badge: 'Elite',
+    badge: 'Signature',
     badgeClass: 'badge-elite',
     price: '£299',
     period: '/month',

@@ -18,7 +18,7 @@ const experiences = [
   {
     icon: ChefHat,
     title: 'Chef Experiences',
-    description: 'Go behind the pass. Exclusive kitchen tours, cooking masterclasses, and market visits with exceptional chefs in cities worldwide.',
+    description: 'Go behind the pass. Behind-the-scenes kitchen tours, cooking masterclasses, and market visits with exceptional chefs in cities worldwide.',
   },
   {
     icon: Globe,
@@ -93,7 +93,7 @@ const testimonials = [
         </h1>
         <p class="hero-subtitle text-body-lg reveal reveal-delay-2">
           AI-curated dining experiences — from hidden neighborhood gems to 
-          exclusive private dinners with world-class chefs. Every meal, meaningful.
+          intimate private dinners with world-class chefs. Every meal, meaningful.
         </p>
         <div class="hero-actions reveal reveal-delay-3">
           <router-link to="/contact" class="btn btn-primary btn-lg">Explore Dining</router-link>
@@ -203,6 +203,20 @@ const testimonials = [
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION MOMENT -->
+    <section class="mission-moment section section-border-top reveal">
+      <div class="container">
+        <div class="mission-inner" style="padding: var(--space-3xl); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg-secondary);">
+          <p class="text-body-lg" style="max-width: 700px; margin: 0 auto; text-align: center; color: var(--color-text-secondary);">
+            Our AI-powered restaurant recommendations are
+            <span class="text-gold">free for every member</span>.
+            Q+ members unlock private dining events and chef experiences —
+            and their support helps us keep the core experience accessible to all.
+          </p>
         </div>
       </div>
     </section>

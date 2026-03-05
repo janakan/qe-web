@@ -90,7 +90,7 @@ const features = [
   {
     icon: Mic,
     title: 'Expert Masterclasses',
-    description: 'Live sessions with world-class practitioners and thinkers. Q+ members get exclusive access and Q&A time.',
+    description: 'Live sessions with world-class practitioners and thinkers. Q+ members get priority access and Q&A time.',
   },
 ]
 

@@ -10,8 +10,8 @@ const pillars = [
     title: 'Circles & Events',
     description: 'AI-powered networks that bring the right people together at the right time. The power of elite networks, now available to everyone.',
     route: '/circles',
-    stat: '12,000+',
-    statLabel: 'Lives Connected',
+    stat: '381',
+    statLabel: 'Circles',
     icon: Users,
   },
   {
@@ -20,7 +20,7 @@ const pillars = [
     description: 'World-class coaching, learning journeys, and weekly growth groups. Free for everyone. Forever. Because personal growth shouldn\'t be a luxury.',
     route: '/coaching',
     stat: '50,000+',
-    statLabel: 'Hours of Free Coaching',
+    statLabel: 'Coaching Hours',
     icon: Brain,
   },
   {
@@ -28,8 +28,8 @@ const pillars = [
     title: 'Travel, Dining & Retreats',
     description: 'AI-curated travel, exceptional dining, and transformative retreats. Extraordinary experiences that help you live a life of depth and meaning.',
     route: '/travel',
-    stat: '50+',
-    statLabel: 'Countries',
+    stat: '125',
+    statLabel: 'Cities',
     icon: Sparkles,
   },
   {
@@ -37,8 +37,8 @@ const pillars = [
     title: 'Books, News & Music',
     description: 'From personalized book summaries to AI-composed music — beautiful, intelligent media that enriches your daily life. Free for everyone.',
     route: '/apps/books',
-    stat: '3',
-    statLabel: 'Free Products',
+    stat: '100%',
+    statLabel: 'Free',
     icon: AppWindow,
   },
 ]
@@ -51,16 +51,16 @@ const testimonials = [
     circle: 'Tech Founders Circle',
   },
   {
-    quote: 'As a first-generation university student, I never had the networks my peers took for granted. Quintessential changed that — and it\'s completely free. That\'s extraordinary.',
-    name: 'Raj Patel',
-    role: 'Software Developer, Mumbai',
-    circle: 'Career Changers Group',
+    quote: 'As a single mum, I never imagined I\'d have access to coaching or a community like this. Quintessential gave me both — for free. It\'s changed how I show up for my kids.',
+    name: 'Priya Kaur',
+    role: 'Nurse, Birmingham',
+    circle: 'New Parents Circle',
   },
   {
-    quote: 'The Reciprocity Ring changed everything for me. In 45 minutes, six strangers became allies. The AI facilitator was remarkably human.',
-    name: 'Elena Vasquez',
-    role: 'Nonprofit Director',
-    circle: 'Global Leaders Circle',
+    quote: 'I retired last year and felt invisible. My Q Circle gave me purpose again — I mentor young founders, and they teach me about AI. The intergenerational mix is magic.',
+    name: 'David Mensah',
+    role: 'Retired Teacher, Accra',
+    circle: 'Wisdom Keepers Circle',
   },
 ]
 
@@ -78,16 +78,16 @@ const blogPosts = [
 ]
 
 const impactStats = [
-  { value: '12,000+', label: 'Lives Touched' },
+  { value: '12,000+', label: 'Members' },
   { value: '32', label: 'Countries' },
-  { value: '50,000+', label: 'Hours of Free Coaching' },
-  { value: '$15M+', label: 'In Services Made Free' },
+  { value: '125', label: 'Cities' },
+  { value: '2,150+', label: 'Events' },
 ]
 
 const promiseItems = [
   { icon: Shield, title: 'Free forever', desc: 'Core coaching, learning, communities, and media will always be free. Not a trial. A commitment.' },
   { icon: Globe, title: 'For every human', desc: 'We build for the whole world — not just English speakers, not just tech workers, not just the privileged.' },
-  { icon: Crown, title: 'Q+ is optional', desc: 'We will never degrade the free experience to push upgrades. Q+ is for patrons who fund the mission.' },
+  { icon: Crown, title: 'Q+ is optional', desc: 'We will never degrade the free experience to push upgrades. Q+ is for people who want more — and whose generosity funds the mission.' },
 ]
 </script>
 
@@ -100,18 +100,16 @@ const promiseItems = [
         <div class="hero-grid-pattern"></div>
       </div>
       <div class="container hero-content">
-        <div class="hero-badge reveal">
-          <span class="hero-badge-dot"></span>
-          A global movement for human flourishing
-        </div>
+
         <h1 class="text-hero reveal reveal-delay-1">
-          Every human deserves<br>
-          <span class="text-serif-italic text-gold">to flourish.</span>
+          No human<br>
+          <span class="text-serif-italic text-gold">left behind.</span>
         </h1>
         <p class="hero-subtitle text-body-lg reveal reveal-delay-2">
-          AI holds extraordinary promise for every person on earth — better health, deeper
-          learning, richer relationships, more meaningful work. Quintessential exists to
-          make that promise real, with tools that are free for everyone.
+          AI will reshape every human life. It could mean mass unemployment, deepening
+          isolation, and a world where only the privileged thrive — or it could mean
+          extraordinary growth, health, connection, and opportunity for everyone.
+          Which do you choose?
         </p>
         <div class="hero-actions reveal reveal-delay-3">
           <router-link to="/contact" class="btn btn-primary btn-lg">Join Free</router-link>
@@ -132,10 +130,9 @@ const promiseItems = [
       <div class="container">
         <div class="manifesto-inner">
           <p class="text-subheading" style="max-width: 800px; margin: 0 auto; text-align: center;">
-            AI is making extraordinary things almost free — world-class coaching,
-            curated communities, personalized learning, beautiful music.
-            <span class="text-gold">We believe every human should have access to these.</span>
-            Not just the privileged few. Everyone.
+            Quintessential is a powerhouse community of 12,000+ executives, rockstars,
+            judges, professors, parliamentarians, and parents, united with one mission:
+            <span class="text-gold">to maximize human flourishing in the age of AI.</span>
           </p>
         </div>
       </div>
@@ -164,7 +161,6 @@ const promiseItems = [
               <span class="pillar-stat-value">{{ pillar.stat }}</span>
               <span class="pillar-stat-label">{{ pillar.statLabel }}</span>
             </div>
-            <span class="pillar-link btn-ghost">Explore</span>
           </router-link>
         </div>
       </div>
@@ -175,17 +171,17 @@ const promiseItems = [
       <div class="container">
         <div class="tension-inner">
           <div class="tension-text">
-            <span class="text-label">Our Philosophy</span>
-            <h2 class="text-heading">Premium <span class="text-serif-italic text-gold">&</span> accessible.</h2>
+            <span class="text-label">The Generosity Model</span>
+            <h2 class="text-heading">Excellence.<br><span class="text-serif-italic text-gold">For everyone.</span></h2>
             <p class="text-body-lg">
-              We're often asked: are you a luxury brand or a social movement?
-              The answer is yes. We believe the premium and the universal aren't opposites
-              — they're partners.
+              We call it the Generosity Model. We build extraordinary experiences —
+              coaching, community, travel, dining, learning — and we make the
+              core versions free for everyone.
             </p>
             <p class="text-body-lg">
-              AI makes incredible things nearly free: personalized coaching, curated
-              communities, world-class learning. We give these away — <strong>free, for everyone, forever</strong>.
-              Our premium tier, Q+, unlocks more — and funds our mission to keep everything else accessible.
+              Q+ members get the full, elevated experience. And their generosity
+              is what keeps the doors open for millions. It's not charity — it's a
+              system where <strong>everyone wins</strong>.
             </p>
             <router-link to="/worldview" class="btn-ghost">Read our worldview</router-link>
           </div>
@@ -211,7 +207,7 @@ const promiseItems = [
                 <li>Priority event access</li>
                 <li>Blended AI + human coaching</li>
                 <li>Premium expert lectures</li>
-                <li>Exclusive in-person events</li>
+                <li>Intimate in-person events</li>
               </ul>
             </div>
           </div>
@@ -398,7 +394,7 @@ const promiseItems = [
 .pillar-icon { font-size: var(--text-3xl); color: var(--color-gold); margin-bottom: var(--space-lg); }
 .pillar-title { font-size: var(--text-xl); font-weight: var(--font-semibold); margin: var(--space-sm) 0 var(--space-md); }
 .pillar-desc { font-size: var(--text-sm); color: var(--color-text-secondary); line-height: 1.6; flex: 1; }
-.pillar-stat { display: flex; align-items: baseline; gap: var(--space-sm); margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border); }
+.pillar-stat { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border); }
 .pillar-stat-value { font-size: var(--text-xl); font-weight: var(--font-bold); color: var(--color-gold); }
 .pillar-stat-label { font-size: var(--text-xs); color: var(--color-text-tertiary); }
 .pillar-link { margin-top: var(--space-md); }

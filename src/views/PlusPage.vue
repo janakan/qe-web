@@ -4,20 +4,20 @@ import CtaBanner from '../components/CtaBanner.vue'
 import { Heart, Users, GraduationCap, Brain, Sparkles, Globe, BookOpen, Music, Newspaper, Shield, Crown, Building2 } from 'lucide-vue-next'
 useScrollReveal()
 
-const missionStats = [
-  { value: '50,000+', label: 'Hours of Free Coaching Delivered' },
-  { value: '$15M+', label: 'Worth of Services Made Free Through AI' },
-  { value: '12,000+', label: 'Lives Touched Across 32 Countries' },
-  { value: '100%', label: 'Of Core Products Free Forever' },
+const plusStats = [
+  { value: '12,000+', label: 'Members' },
+  { value: '32', label: 'Countries' },
+  { value: '2,150+', label: 'Events' },
+  { value: '94%', label: 'Would Recommend' },
 ]
 
-const whatYourMembershipFunds = [
-  { icon: Brain, title: 'Free Coaching for Everyone', description: 'Your membership directly funds world-class AI coaching that\'s available to anyone on earth, forever.' },
-  { icon: GraduationCap, title: 'Free Learning Journeys', description: 'Every learning journey, lecture, and growth challenge remains free because of Q+ members like you.' },
-  { icon: Users, title: 'Peer Groups Worldwide', description: 'From Lagos to London, Peer Groups are free for everyone. Q+ membership keeps them running.' },
-  { icon: BookOpen, title: 'Free Book Summaries', description: 'Thousands of book summaries and reading journeys, available to anyone who wants to learn.' },
-  { icon: Newspaper, title: 'Free Personalized News', description: 'Thoughtful, ad-free news curation — no clickbait, no manipulation — free for every human.' },
-  { icon: Music, title: 'Free AI Music', description: 'AI-composed music for focus, relaxation, and joy — free for everyone, funded by the Q+ community.' },
+const whatYouUnlock = [
+  { icon: Brain, title: 'Blended Coaching', description: 'AI coaching enhanced with real human coaches. The always-on intelligence of AI, combined with the depth and intuition of a world-class human coach.' },
+  { icon: GraduationCap, title: 'Expert-Led Workshops', description: 'Curated lectures and workshops from leading thinkers, founders, and practitioners — depth you won\'t find anywhere else.' },
+  { icon: Users, title: 'Create Your Own Groups', description: 'Launch your own Circles and Peer Groups. Bring your people together on the Quintessential platform.' },
+  { icon: BookOpen, title: 'Advanced Growth Tools', description: 'Deeper personality assessments, advanced goal tracking, and AI-powered growth insights that go further.' },
+  { icon: Newspaper, title: 'Priority Everything', description: 'Priority AI matching, early access to new features, and first invitations to intimate in-person events and retreats.' },
+  { icon: Music, title: 'Signature Experiences', description: 'Curated retreat invitations, private dining events, and premium travel itineraries — the full Quintessential experience.' },
 ]
 
 const tiers = [
@@ -26,16 +26,16 @@ const tiers = [
     icon: Sparkles,
     price: '$9',
     period: '/month',
-    description: 'For individuals who want to grow faster and support the mission of making these tools free for everyone.',
+    description: 'For individuals who want the full Quintessential experience — deeper coaching, curated content, and premium access.',
     features: [
-      'Everything in Free — forever',
+      'Everything in Free — always',
       'Premium expert lectures & workshops',
       'Advanced growth assessments',
       'Create your own Circles & Peer Groups',
       'Priority AI matching for all products',
-      'Exclusive retreat invitations',
+      'Curated retreat invitations',
       'Early access to new features',
-      'Q+ member badge & community',
+      'Q+ member community',
     ],
     cta: 'Join Q+ Individual',
     ctaClass: 'btn-primary',
@@ -45,7 +45,7 @@ const tiers = [
     icon: Heart,
     price: '$19',
     period: '/month',
-    description: 'Extend Q+ benefits to your whole household — up to 6 people — and multiply your impact on the mission.',
+    description: 'The full Q+ experience for your whole household — up to 6 people. Grow together as a family.',
     features: [
       'Everything in Q+ Individual',
       'Up to 6 family members',
@@ -54,7 +54,7 @@ const tiers = [
       'Family growth challenges',
       'Parenting & relationship resources',
       'Family retreat access',
-      'Double the mission impact',
+      'Priority family event invitations',
     ],
     cta: 'Join Q+ Family',
     ctaClass: 'btn-primary',
@@ -65,7 +65,7 @@ const tiers = [
     icon: Building2,
     price: '$29',
     period: '/month per seat',
-    description: 'Bring Quintessential to your team. Leadership development, team coaching, and peer groups — all powered by AI.',
+    description: 'Bring the full Quintessential experience to your team — leadership development, team coaching, and peer groups.',
     features: [
       'Everything in Q+ Individual',
       'Team Peer Groups',
@@ -74,7 +74,7 @@ const tiers = [
       'Manager & culture tools',
       'Custom Circle creation',
       'Dedicated account support',
-      'Enterprise-scale mission impact',
+      'Company-wide analytics & insights',
     ],
     cta: 'Contact Us',
     ctaClass: 'btn-secondary',
@@ -83,12 +83,12 @@ const tiers = [
 
 const testimonials = [
   {
-    quote: 'I joined Q+ not because I needed more features — but because I believe coaching and learning should be free for everyone. The fact that I get premium workshops too is a bonus.',
+    quote: 'The blended coaching alone is worth ten times the price. Having an AI coach available at 2am and a human coach who actually knows my story — that\'s something I\'ve never had before.',
     name: 'Maria Santos',
-    role: 'Teacher, São Paulo',
+    role: 'VP Product, Lisbon',
   },
   {
-    quote: 'Our entire leadership team is on Q+ Corporate. The peer groups and coaching have transformed our culture. And knowing our subscription funds free access for others makes it even better.',
+    quote: 'Our entire leadership team is on Q+ Corporate. The peer groups and coaching have genuinely transformed our culture. And knowing our subscriptions help keep these tools free for everyone? That\'s the kind of company we want to be.',
     name: 'Anders Lindström',
     role: 'CEO, Brightpath',
   },
@@ -104,18 +104,15 @@ const testimonials = [
         <div class="hero-grid-pattern"></div>
       </div>
       <div class="container hero-content">
-        <div class="hero-badge reveal">
-          <span class="hero-badge-dot"></span>
-          Supporting human flourishing for everyone
-        </div>
         <h1 class="text-hero reveal reveal-delay-1">
-          Everything is free.<br>
-          <span class="text-serif-italic text-gold">Q+ makes it possible.</span>
+          Go further.<br>
+          <span class="text-serif-italic text-gold">Do more.</span>
         </h1>
         <p class="hero-subtitle text-body-lg reveal reveal-delay-2">
-          Wherever we can, we make everything free for every human on earth — coaching,
-          learning, communities, media. Q+ members are the patrons who fund this mission,
-          and unlock premium experiences along the way.
+          Q+ is the full Quintessential experience — deeper coaching, intimate events,
+          and curated experiences designed for those who want to get the most out of life.
+          And because we're Quintessential, every Q+ membership also helps keep
+          everything else free for everyone.
         </p>
         <div class="hero-actions reveal reveal-delay-3">
           <a href="#tiers" class="btn btn-primary btn-lg">See Plans</a>
@@ -125,23 +122,11 @@ const testimonials = [
       <div class="hero-fade"></div>
     </section>
 
-    <!-- MISSION IMPACT -->
-    <section class="mission-impact section reveal">
-      <div class="container">
-        <div class="mission-impact-inner">
-          <p class="text-subheading" style="max-width: 800px; margin: 0 auto; text-align: center;">
-            Every Q+ membership directly funds free access for people who can't afford to pay.
-            <span class="text-gold">This is not a premium upsell. It's a movement powered by generosity.</span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- IMPACT STATS -->
+    <!-- STATS -->
     <section class="impact-stats reveal">
       <div class="container">
         <div class="stats-grid">
-          <div v-for="stat in missionStats" :key="stat.label" class="stat-item">
+          <div v-for="stat in plusStats" :key="stat.label" class="stat-item">
             <span class="stat-value">{{ stat.value }}</span>
             <span class="stat-label">{{ stat.label }}</span>
           </div>
@@ -149,20 +134,20 @@ const testimonials = [
       </div>
     </section>
 
-    <!-- WHAT YOUR MEMBERSHIP FUNDS -->
+    <!-- WHAT YOU UNLOCK -->
     <section class="funds section">
       <div class="container">
         <div class="section-header reveal">
-          <span class="text-label">Your Impact</span>
-          <h2 class="text-heading">What your membership<br><span class="text-serif-italic text-gold">makes possible.</span></h2>
+          <span class="text-label">The Q+ Experience</span>
+          <h2 class="text-heading">What you<br><span class="text-serif-italic text-gold">unlock.</span></h2>
           <p class="text-body-lg" style="max-width: 600px; margin: var(--space-lg) auto 0;">
-            Every dollar from Q+ goes directly to keeping these products free for everyone.
-            Here's what your generosity funds.
+            Q+ is the concierge-level experience for those who want to go further.
+            Here's what's waiting for you.
           </p>
         </div>
         <div class="funds-grid">
           <div
-            v-for="(item, i) in whatYourMembershipFunds"
+            v-for="(item, i) in whatYouUnlock"
             :key="item.title"
             class="fund-card glass reveal"
             :class="`reveal-delay-${(i % 3) + 1}`"
@@ -179,11 +164,11 @@ const testimonials = [
     <section id="tiers" class="tiers section section-border-top">
       <div class="container">
         <div class="section-header reveal">
-          <span class="text-label">Choose Your Impact</span>
-          <h2 class="text-heading">Support the mission.<br><span class="text-serif-italic text-gold">Unlock more.</span></h2>
+          <span class="text-label">Choose Your Plan</span>
+          <h2 class="text-heading">Find your<br><span class="text-serif-italic text-gold">fit.</span></h2>
           <p class="text-body-lg" style="max-width: 600px; margin: var(--space-lg) auto 0;">
-            Every tier supports the free mission. The difference is scope — individual,
-            family, or team. Choose the level that fits your life.
+            Individual, family, or team. Choose the experience that fits your life —
+            and know that every membership helps us keep everything else free.
           </p>
         </div>
         <div class="tiers-grid">
@@ -247,7 +232,7 @@ const testimonials = [
       <div class="container">
         <div class="section-header reveal">
           <span class="text-label">Q+ Members</span>
-          <h2 class="text-heading">Why they<br><span class="text-serif-italic text-gold">support us.</span></h2>
+          <h2 class="text-heading">Why they<br><span class="text-serif-italic text-gold">went Q+.</span></h2>
         </div>
         <div class="testimonials-grid">
           <div
@@ -271,9 +256,9 @@ const testimonials = [
 
     <CtaBanner
       label="Join Q+"
-      title="Fund the future of"
-      title-accent="human flourishing."
-      description="Your Q+ membership doesn't just unlock more for you — it funds free coaching, learning, and community for people around the world."
+      title="Ready to go"
+      title-accent="further?"
+      description="Get the premium Quintessential experience — and help us keep everything else free for everyone."
       primary-text="Join Q+ Today"
       primary-link="/contact"
       secondary-text="Read Our Mission"
